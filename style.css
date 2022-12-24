@@ -1,0 +1,263 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+	background-color: gray;
+}
+
+.parent{
+	height: 640px;
+	width: 1100px;
+	position: relative;
+	margin: 0 auto;
+}
+.left-child{
+	height: 640px;
+	width: 550px;
+	background-color: white;
+	position: relative;
+	float: left;
+	border-bottom-left-radius: 25px;
+	border-top-left-radius: 25px;
+}
+.head{
+	margin-left: 50px;
+	margin-top: 10px;
+	position: absolute;
+}
+.head h4{
+	font-size: 12px;
+}
+form{
+	height: 540px;
+	width: 450px;
+	margin: 50px 50px;
+	margin-top: 88px;
+}
+a{
+	text-decoration: none;
+}
+form h2{
+	margin-bottom: 25px;
+	  font-size: 30px;
+}
+
+.field{
+	height: 50px;
+	width: 450px;
+	margin-bottom: 2px;
+}
+
+.first, .pwd{
+	float: left;
+}
+.last, .confpwd{
+	float: right;
+}
+
+legend{
+	position: relative;
+	margin-left: 6px;
+	color: gray;
+	letter-spacing: 1px;
+	font-size: 13px;
+	padding-left: 4px;
+	padding-right: 4px;
+	z-index: 1;
+	background-color: white;
+}
+fieldset{
+	position: relative;
+	border:none;
+	height: 50px;
+	width: 223px;
+}
+fieldset > .foc{
+  	width: 100%;
+  	height: 40px;
+  	position: absolute;
+  	top: -11px;
+  	left: -2px;
+ 	 border: 2px solid lightgray;
+	border-radius: 5px;
+}
+
+input:focus ~ .foc{
+	border-color: #60EFFF;
+}
+
+input[type=email],[type=number],[type=password],[type=text]{
+	border: none;
+	height: 100%;
+	width: 100%;
+	top: -2px;
+	text-indent: 5px;
+	font-size: 12px;
+	z-index: 4;
+	position: absolute;
+	background-color: transparent;
+}
+.fa-sharp{
+position: absolute;
+height: 12px;
+width: 12px;
+margin-top: 3px;
+margin-left: 37px;
+color: gray;
+}
+input:focus{
+	outline: none;
+}
+input[type=submit],[type=checkbox]{
+	margin: 15px 0px;
+}
+input[type=number]{
+	appearance: textfield;
+}
+
+input[type=submit]{
+	height: 50px;
+	width: 450px;
+	margin-bottom: 25px;
+	
+background: hsla(152, 100%, 50%, 1);
+
+background: linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00FF87", endColorstr="#60EFFF", GradientType=1 );
+	color: white;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 0.630px;
+	border: none;
+}
+form p,a{
+	font-size: 12px;
+	font-weight: 600;
+}
+.psignup{
+	text-align: center;
+	border-bottom: solid gray 1px;
+	color: gray;
+	line-height: 1px;
+	margin-bottom: 26px;
+}
+span{
+	background-color: white;
+	padding: 0px 5px ;
+}
+
+ul{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	list-style-type: none;
+	display: flex;
+}
+li a img{
+	height: 25px;
+	width: 25px;
+}
+li{
+	border: solid gray 1px;
+	border-radius: 5px;
+	padding: 10px 30px 0px;
+}
+.apple {
+  margin-left: 95px;
+}
+.facebook {
+  margin-left: 88px;
+}
+
+
+.right-child{
+	height: 640px;
+	width: 550px;
+	
+background: hsla(152, 100%, 50%, 1);
+
+background: linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00FF87", endColorstr="#60EFFF", GradientType=1 );
+	
+	position: relative;
+	float: right;
+	opacity: 0.97;
+	border-bottom-right-radius: 25px;
+	border-top-right-radius: 25px;
+}
+.welcome{
+	position: absolute;
+	height: 540px;
+	width: 450px;
+	margin: 88px 50px 50px;
+}
+
+.welcome h1{
+	margin-top: 87px;
+	font-size: 68px;
+	color: white;
+}
+.welcome p{
+	margin-top: 24px;
+	width: 330px;
+	margin-left: 50PX;
+	color: white;
+}
+
+h6{
+	margin-top: 120px;
+	float: right;
+	color: white;
+	font-size: 11px;
+	font-weight: 500;
+}
+.backimg{
+	height: 640px;
+	width: 550px;
+	position: absolute;
+	display: inline;
+}
+img{
+	height: 640px;
+	width: 550px;
+	border-bottom-right-radius: 25px;
+	border-top-right-radius: 25px;
+}
+
+.vertical{
+	position: absolute;
+	height: 260px;
+	border-right: solid #46b061 1px;
+	margin: 179px 0 0 72px;
+}
+.icone{
+	position: relative;
+	height: 35px;
+	width: 35px;
+	margin: 5px;
+}
+.circle{
+	position: absolute;
+	height: 45px;
+	width: 45px;
+	background-color: white;
+	border-radius: 50%;
+	margin: 118px 0 0 49px;
+}
